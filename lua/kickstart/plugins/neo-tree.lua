@@ -8,5 +8,14 @@ return {
       'MunifTanjim/nui.nvim',
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
+    config = function()
+      -- To open on startup:
+      -- vim.cmd 'Neotree'
+
+      -- Register key combination
+      vim.keymap.set('n', '<leader>`', function()
+        vim.cmd 'Neotree toggle'
+      end, { desc = 'Toggle Neotree' })
+    end,
   },
 }

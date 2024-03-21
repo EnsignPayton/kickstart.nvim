@@ -45,6 +45,9 @@ require('lazy').setup({
   -- Highlight, edit, and navigate code
   require 'kickstart.plugins.treesitter',
 
+  -- Sidebar
+  require 'kickstart.plugins.neo-tree',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
